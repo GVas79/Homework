@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, rgb(118, 183, 236) 0%,rgb(120, 188, 120) 100%);
+}
+
+button {
+    width: 120px;
+    height: 60px;
+    padding: 10px;
+    float: right;
+    margin: 5px;
+    background-color: grey;
+    color: aqua;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid orange;  
+}
+
+.common {
+    text-align: center;
+    font-size: large;
+    position: absolute;
+    padding: 10px;
+    transition: transform 1s ease-out;
+}
+
+.square1 {
+    bottom: 5px;
+    left: 130px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.square2 {
+    bottom: 5px;
+    left: 350px;
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+}
+
+.square3 {
+    bottom: 5px;
+    left: 900px;
+    width: 150px;
+    height: 150px;
+    background-color:orange;
+}
+
+.square4 {
+    color: white;
+    bottom: 5px;
+    left: 1300px;
+    width: 180px;
+    height: 180px;
+    background-color:black;
+}
+
+button:hover {
+    background-color: aqua;
+    color: gray;
+    border-radius: 10px;
+    cursor:crosshair;
+    transform: scale(0.9);
+}
+
+button:active ~ .common {
+    transform: translate(-100px,-700px) rotate(720deg);
+}
