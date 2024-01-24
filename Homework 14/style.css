@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+@media screen and (min-width: 1024px) {
+.container {
+    padding: 20px;
+    height: 60vh;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 20% 50% calc(30%-20px);
+    grid-template-rows: auto;
+    column-gap: 1.5%;
+    row-gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "nav footer footer"
+}
+
+.item {
+    text-align: center;
+    background-color: brown;
+    padding-top: 65px;
+    font-size: 1.5rem;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    body {
+        background-color: green;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        height: 60vh;
+        background-color: lime;
+        display: grid;
+        grid-template-columns: 20% 50% calc(30%-20px);
+        grid-template-rows: auto;
+        column-gap: 2%;
+        row-gap: 20px;
+        grid-template-areas: 
+        "nav header header"
+        "nav footer footer"
+        "nav main aside"
+    }
+    
+    .item {
+        text-align: center;
+        background-color: teal;
+        padding-top: 65px;
+        font-size: 1.5rem;
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    nav {
+        grid-area: nav;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    
+    aside {
+        grid-area: aside;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    body {
+        background-color: blue;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+        height: 60vh;
+        background-color: rgb(34, 147, 227);
+        display: grid;
+        grid-template-columns: 75% calc(25%-20px);
+        grid-template-rows: auto;
+        column-gap: 2%;
+        row-gap: 20px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer"
+    }
+    
+    .item {
+        text-align: center;
+        background-color: lightskyblue;
+        padding-top: 45px;
+        font-size: 1.5rem;
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    nav {
+        grid-area: nav;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    
+    aside {
+        grid-area: aside;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+}
+
+    
