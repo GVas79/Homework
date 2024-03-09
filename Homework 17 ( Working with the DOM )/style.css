@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color:rgb(143, 192, 192);
+}
+
+input {
+width: 200px;
+margin-bottom: 5px;
+}
+
+label {
+font-weight: 700;
+}
+
+button {
+padding: 10px;
+font-size: 1rem;
+background-color: rgb(139, 168, 168);
+color: black;
+border-radius: 10px;
+}
