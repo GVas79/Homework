@@ -1,0 +1,115 @@
+body {
+    margin:0;
+    padding:0;
+    background-color: rgb(208, 149, 159);
+}
+
+nav {
+    float: left;
+    margin-left: 1.5%;
+    margin-right: 2%;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
+    margin: 3px;
+    background-color: white;
+    color:rgb(214, 119, 135);
+    font-weight: 700;
+}
+
+ul li a {
+    text-decoration: none;
+    color:rgb(214, 119, 135); 
+}
+
+li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#main {
+    margin-left: 8%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 0 10px
+}
+
+.models {
+    background-color: black;
+    border-radius: 10px;
+    width: 17%;
+    min-width: 300px;
+}
+
+.models p {
+    padding: 10px;
+}
+
+img {
+    padding: 10px;
+}
+
+.models p, .models h3 {
+    color:white;
+}
+
+.models h3 {
+    padding-right: 2.5%;
+    text-align: right;
+}
+
+#history , #formula {
+    width:90%;
+    margin-left: 5%;
+}
+
+#history p, #formula p {
+    background-color: white;
+    padding: 30px 10px;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    ul {
+        display: inline-block;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 1.4rem;
+        padding: 5px;
+        margin: 4px;
+    }
+
+    .models {
+        width: 100%;
+    }
+
+    #main {
+        margin: auto;
+    }
+}
