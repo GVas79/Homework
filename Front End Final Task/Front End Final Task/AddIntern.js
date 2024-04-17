@@ -26,7 +26,6 @@ imageInput.addEventListener('change', function () {
             var reader = new FileReader();
             reader.onload = function (event) {
                 var data = event.target.result;
-                console.log(document.getElementById('imageViewer').src = data);
                 document.getElementById('imageViewer').src = data
                 imageInputPreview = data;
 
