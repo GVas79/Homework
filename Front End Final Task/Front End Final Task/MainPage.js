@@ -1,4 +1,5 @@
-var createButton = document.getElementById('create-button');
+        
+        var createButton = document.getElementById('create-button');
         var cancelButton = document.getElementById('clear-button');
 
         createButton.addEventListener('click', function () { window.location.href = 'AddIntern.html' });
@@ -90,6 +91,7 @@ var createButton = document.getElementById('create-button');
                     result.textContent = "Passed";
                 } else if(intern.resultOne == "" || intern.resultTwo == "") {
                     result.textContent = "Pending";
+                    result.style.color = "orange";
                 } else {
                     result.style.color = "red";
                     result.textContent = "Failed";
