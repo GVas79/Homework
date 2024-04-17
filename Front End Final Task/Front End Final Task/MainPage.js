@@ -1,6 +1,5 @@
         
         var createButton = document.getElementById('create-button');
-        var cancelButton = document.getElementById('clear-button');
 
         createButton.addEventListener('click', function () { window.location.href = 'AddIntern.html' });
     
