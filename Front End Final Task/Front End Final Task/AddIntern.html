@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Record</title>
+    <link rel="stylesheet" href="AddIntern.css">
+   
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Add Record</h2>
+        </div>
+
+        <div class="upload" id="imageUpload">
+            <label for="imageInput">Image</label>
+            <input type="file" id="imageInput" multiple>
+        </div>
+        <div class="image-wrapper">
+            <img id="imageViewer" alt="No image loaded" />
+        </div>
+
+        <div class="row">
+            <div class="input-container">
+                <label>Intern Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="input-container">
+                <label>Telephone</label>
+                <input type="tel" id="tel">
+            </div>
+            <div class="input-container">
+                <label>Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="input-container">
+                <label>Start Date</label>
+                <input type="date" id="start-date" placeholder="mm/dd/yyyy">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-container">
+                <label>End Date</label>
+                <input type="date" id="end-date" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="input-container">
+                <label>Day(s) Left</label>
+                <input type="text" id="left" disabled>
+            </div>
+            <div class="input-container">
+                <label>First Task</label>
+                <select id="task-one">
+                    <option>- Select a task -</option>
+                    <option>Task 1</option>
+                    <option>Task 2</option>
+                    <option>Task 3</option>
+                    <option>Task 4</option>
+                    <option>Task 5</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label>Second Task</label>
+                <select id="task-two">
+                    <option>- Select a task -</option>
+                    <option>Task 1</option>
+                    <option>Task 2</option>
+                    <option>Task 3</option>
+                    <option>Task 4</option>
+                    <option>Task 5</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-container">
+                <label>Department</label>
+                <select id="department">
+                    <option>- Select a department -</option>
+                    <option>Service Plan</option>
+                    <option>iVHC</option>
+                    <option>CRM</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label>Mentor</label>
+                <input type="text" id="mentor">
+            </div>
+
+            <div class="input-container">
+                <label>First Task Result</label>
+                <input type="text" id="result-one">
+            </div>
+            <div class="input-container">
+                <label>Second Task Result</label>
+                <input type="text" id="result-two">
+            </div>
+        </div>
+        <div class="upload">
+            <label for="fileInput">Task images</label>
+            <input type="file" id="fileInputs" multiple>
+        </div>
+        <div class="button-container">
+            <button type="button" id="cancel-button">Cancel</button>
+            <button type="button" id="create-button">Add</button>
+        </div>
+        <ul id="error-list">
+
+        </ul>
+    </div>
+
+    <script src="AddIntern.js"></script>
+
+</body>
+
+</html>

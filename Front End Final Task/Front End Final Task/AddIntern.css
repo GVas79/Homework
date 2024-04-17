@@ -1,0 +1,108 @@
+body {
+box-sizing: border-box;
+padding: 5px;
+font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    display: block;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+input,
+select {
+    border-radius: 5px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    flex-basis: 22%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label {
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #48bb78;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    margin-left: 15px;
+}
+
+#cancel-button {
+    background-color: #ccc;
+    color: #333;
+}
+
+#cancel-button:hover {
+   background-color: #b1a8a8;
+}
+ 
+#create-button {
+    background-color: #48bb78;
+    color:white;
+}
+
+#create-button:hover {
+    background-color: #38a169;
+}
+
+.upload label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.image-wrapper {
+    margin-bottom: 20px;
+}
+
+.image-wrapper img {
+    max-width: 200px;
+}
+
+#imageUpload {
+    margin-bottom: 20px;
+}
